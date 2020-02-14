@@ -11,9 +11,7 @@ import { useInView } from "react-intersection-observer"
 import gsap from "gsap"
 
 async function load() {
-  await import(
-    "../../node_modules/intersection-observer/intersection-observer"
-  ).then(something => {
+  await import("intersection-observer").then(something => {
     console.log("LOADING THE POLYFILL: ", something)
   })
 }
