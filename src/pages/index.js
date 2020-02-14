@@ -1,4 +1,5 @@
-import "../../node_modules/intersection-observer/intersection-observer"
+// import "../../node_modules/intersection-observer/intersection-observer"
+
 import React, { useEffect, useRef, useState } from "react"
 import { Link } from "gatsby"
 
@@ -8,6 +9,17 @@ import SEO from "../components/seo"
 
 import { useInView } from "react-intersection-observer"
 import gsap from "gsap"
+
+async function load() {
+  await import(
+    "../../node_modules/intersection-observer/intersection-observer"
+  ).then(something => {
+    console.log("LOADING THE POLYFILL: ", something)
+  })
+}
+if (typeof IntersectionObserver === `undefined`) {
+  load()
+}
 
 const IndexPage = () => {
   const [alreadyRan, toggleRan] = useState(false)
@@ -53,10 +65,6 @@ const IndexPage = () => {
   const restartGsap = () => tween.restart()
 
   const startTheAnimationOfTheAstronauts = () => {
-    console.log("inView: ", inView)
-    console.log("entry: ", entry)
-    console.log("alreadyRan: ", alreadyRan)
-
     if (inView && !alreadyRan) moveTheStuff()
   }
 
