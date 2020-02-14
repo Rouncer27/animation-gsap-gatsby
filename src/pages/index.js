@@ -1,3 +1,4 @@
+import "../../node_modules/intersection-observer/intersection-observer"
 import React, { useEffect, useRef, useState } from "react"
 import { Link } from "gatsby"
 
