@@ -5,6 +5,12 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    // {
+    //   resolve: `gatsby-plugin-polyfill-io`,
+    //   options: {
+    //     features: [`IntersectionObserver`, `fetch`],
+    //   },
+    // },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

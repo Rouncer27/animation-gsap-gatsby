@@ -1,5 +1,5 @@
 // import "../../node_modules/intersection-observer/intersection-observer"
-
+import "intersection-observer"
 import React, { useEffect, useRef, useState } from "react"
 import { Link } from "gatsby"
 
@@ -9,15 +9,6 @@ import SEO from "../components/seo"
 
 import { useInView } from "react-intersection-observer"
 import gsap from "gsap"
-
-async function load() {
-  await import("intersection-observer").then(something => {
-    console.log("LOADING THE POLYFILL: ", something)
-  })
-}
-if (typeof IntersectionObserver === `undefined`) {
-  load()
-}
 
 const IndexPage = () => {
   const [alreadyRan, toggleRan] = useState(false)
@@ -67,6 +58,8 @@ const IndexPage = () => {
   }
 
   startTheAnimationOfTheAstronauts()
+
+  console.log("IntersectionObserver:  ", window.IntersectionObserver)
 
   return (
     <Layout inView={inView}>
