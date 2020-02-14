@@ -67,9 +67,7 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    >
-      <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
-    </Helmet>
+    />
   )
 }
 

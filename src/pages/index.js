@@ -87,7 +87,7 @@ const IndexPage = () => {
       >
         <Image />
       </div>
-      <div
+      {/* <div
         className="ass astronaut-4"
         style={{ maxWidth: `150px`, marginBottom: `1.45rem` }}
       >
@@ -98,7 +98,7 @@ const IndexPage = () => {
         style={{ maxWidth: `150px`, marginBottom: `1.45rem` }}
       >
         <Image />
-      </div>
+      </div> */}
       {/* <button
         id="play"
         onClick={e => {
