@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 
 import IndexAnimation from "../components/IndexAnimation"
 import IndexStatic from "../components/IndexStatic"
+import IndexAnimateTwo from "../components/IndexAnimateTwo"
 
 const IndexPage = () => {
   return (
@@ -11,6 +12,7 @@ const IndexPage = () => {
       <SEO title="Home" />
       <IndexAnimation />
       <IndexStatic />
+      <IndexAnimateTwo />
     </Layout>
   )
 }
