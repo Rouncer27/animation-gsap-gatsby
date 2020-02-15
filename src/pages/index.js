@@ -59,7 +59,7 @@ const IndexPage = () => {
 
   startTheAnimationOfTheAstronauts()
 
-  console.log("IntersectionObserver:  ", window.IntersectionObserver)
+  //console.log("IntersectionObserver:  ", window.IntersectionObserver)
 
   return (
     <Layout inView={inView}>
