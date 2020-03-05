@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react"
 import { Link } from "gatsby"
 import { useInView } from "react-intersection-observer"
 import gsap from "gsap"
+
 import Image from "../components/image"
 
 const IndexAnimation = () => {
@@ -51,6 +52,24 @@ const IndexAnimation = () => {
     if (inView && !alreadyRan) moveTheStuff()
   }
 
+  const fecthTheGitHub = async () => {
+    const request = "https://age-of-empires-2-api.herokuapp.com/api/v1/units"
+    const proxy = "https://cors-anywhere.herokuapp.com/"
+    const res = await fetch(`${proxy}${request}`)
+    const data = await res.json()
+    console.log("data: ", data)
+    // trevorPromise
+    //   .then(response => {
+    //     return response.json()
+    //   })
+    //   .then(data => {
+    //     console.log(data)
+    //   })
+    //   .catch(err => {
+    //     console.log(err)
+    //   })
+  }
+  //fecthTheGitHub()
   startTheAnimationOfTheAstronauts()
 
   //console.log("IntersectionObserver:  ", window.IntersectionObserver)
