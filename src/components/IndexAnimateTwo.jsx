@@ -5,8 +5,8 @@ import ScrollMagic from "scrollmagic"
 
 const IndexAnimateTwo = () => {
   useEffect(() => {
-    console.log(gsap)
-    console.log(ScrollMagic)
+    // console.log(gsap)
+    // console.log(ScrollMagic)
     const controller = new ScrollMagic.Controller()
     const timeLine = gsap
       .timeline()

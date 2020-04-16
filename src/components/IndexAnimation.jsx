@@ -27,7 +27,7 @@ const IndexAnimation = () => {
     //   ease: "linear",
     // })
 
-    console.log("RUNNING THE ANIMATION!!!!")
+    // console.log("RUNNING THE ANIMATION!!!!")
 
     gsap.to(".ass", {
       x: 500,

@@ -5,14 +5,17 @@ import SEO from "../components/seo"
 import IndexAnimation from "../components/IndexAnimation"
 import IndexStatic from "../components/IndexStatic"
 import IndexAnimateTwo from "../components/IndexAnimateTwo"
+import IndexVisibilitySensor from "../components/IndexVisibilitySensor"
 
 const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <IndexAnimation />
-      <IndexStatic />
-      <IndexAnimateTwo />
+      <div style={{ height: "1000px" }} />
+      {/* <IndexAnimation /> */}
+      {/* <IndexStatic />
+      <IndexAnimateTwo /> */}
+      <IndexVisibilitySensor />
     </Layout>
   )
 }
