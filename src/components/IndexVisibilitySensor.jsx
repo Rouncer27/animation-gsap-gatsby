@@ -4,6 +4,8 @@ import Image from "../components/image"
 import VisibilitySensor from "react-visibility-sensor"
 import gsap from "gsap"
 
+console.dir(VisibilitySensor)
+
 const IndexVisibilitySensor = props => {
   const [alreadyRan, toggleRan] = useState(false)
   let tween
@@ -25,12 +27,16 @@ const IndexVisibilitySensor = props => {
   const restartGsap = () => tween.restart()
 
   const onChange = isVisible => {
-    console.log("isVisible: ", isVisible)
+    console.log("PLAY!!!!")
     if (isVisible && !alreadyRan) moveTheStuff()
   }
 
   return (
-    <VisibilitySensor onChange={onChange}>
+    <VisibilitySensor
+      active={true}
+      partialVisibility={true}
+      onChange={onChange}
+    >
       <div>
         <div>
           <div
