@@ -11,7 +11,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div style={{ height: "1000px" }} />
+      <div style={{ height: "1500px" }} />
       {/* <IndexAnimation /> */}
       {/* <IndexStatic />
       <IndexAnimateTwo /> */}
