@@ -36,9 +36,10 @@ const IndexVisibilitySensor = props => {
       active={true}
       partialVisibility={true}
       onChange={onChange}
+      minTopValue={100}
     >
-      <div>
-        <div>
+      <div style={{ borderTop: "solid 2px #000" }}>
+        <div style={{ borderTop: "solid 2px #bada55", marginTop: "100px" }}>
           <div
             className="ass astronaut-1"
             style={{ maxWidth: `150px`, marginBottom: `1.45rem` }}
